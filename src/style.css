@@ -18,6 +18,11 @@ a {
   text-decoration: none;
   color: #40514e;
   position: relative;
+  cursor: default;
+}
+
+a:hoover {
+  color: #40514e;
 }
 
 a.linkGithub {
@@ -37,6 +42,7 @@ input {
 
 p.forcast-for-the-whole-day {
   text-align: center;
+  font-size: 14px;
 }
 
 .card {
@@ -53,7 +59,7 @@ p.forcast-for-the-whole-day {
 
 .current_temperature {
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
   margin-top: -10px;
 }
 
@@ -107,10 +113,17 @@ p.forcast-for-the-whole-day {
 
 #input_city_name {
   text-align: center;
+  margin-left: 60px;
 }
 
 #location_search {
   text-align: center;
+  font-size: 15px;
   display: block;
-  margin: 5px auto;
+  margin: 10px auto;
+  margin-bottom: 5px;
+}
+
+#searchbutton {
+  margin-left: 10px;
 }

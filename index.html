@@ -21,35 +21,36 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="card current-weather" style="width: 25rem">
+        <div class="card current-weather" style="width: 30rem">
           <img
             src="http://openweathermap.org/img/wn/01d@2x.png"
             class="card-img-top"
-            alt=""
+            alt="Weather icon"
           />
           <div class="card-body">
             <form class="card-text">
               <input
-                type="text"
+                type="search"
                 id="input_city_name"
-                placeholder="Name city"
-                size="32"
+                placeholder="Type a city name.."
+                size="30"
+                autocomplete="off"
               />
-              <input type="button" id="searchbutton" value="🔎" />
+              <input type="submit" id="searchbutton" value="🔎" />
               <input
                 type="button"
                 id="location_search"
                 value="📍 current location"
               />
             </form>
-            <h6 id="date-time">3 augustus 2022, 20.35</h6>
-            <br />
+            <h6 id="date-time">Date, time</h6>
+
             <div class="row">
-              <h1 class="name-city">Zeist</h1>
+              <h1 class="name-city">..</h1>
               <div class="current_temperature">
                 <p>
-                  <span id="current_temp"> 25 </span
-                  ><a href id="tempCelsius" ="#">°C</a>|<a
+                  <span id="current_temp"> .. </span
+                  ><a href id="tempCelsius" ="#" class="active">°C</a>|<a
                     href
                     id="tempFahrenheit"
                     ="#"
@@ -57,15 +58,16 @@
                   >
                 </p>
               </div>
-              <p class="weather_description">Sunny</p>
-
+              <p class="weather_description">..</p>
               <br />
               <br />
               <p class="forcast-for-the-whole-day">
-                <a href id="min_temp_today" ="#">17</a>°C |
-                <a href id="max_temp_today" ="#">28</a>°C
+                <a href id="min_temp_today" ="#">..</a>°C |
+                <a href id="max_temp_today" ="#">..</a>°C
                 <br />
-                Humidity <a href id="humidity" ="#">60</a>%
+                Humidity <a href id="humidity" ="#">..</a>%
+                <br />
+                Windspeed <a href id="windspeed" ="#">..</a>km/h
               </p>
             </div>
           </div>
