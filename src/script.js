@@ -77,26 +77,27 @@ document
 document.querySelector("#tempCelsius").addEventListener("click", toCelcius);
 
 function showTemperatureInputLocation(response) {
-  console.log(response);
-  let temperature = Math.round(response.data.main.temp);
   let temperatureShow = document.querySelector("#current_temp");
-  temperatureShow.innerHTML = `${temperature}`;
+  temperatureShow.innerHTML = `${Math.round(response.data.main.temp)}`;
 
-  let minTemperature = Math.round(response.data.main.temp_min);
   let minTemperatureShow = document.querySelector("#min_temp_today");
-  minTemperatureShow.innerHTML = `${minTemperature}`;
+  minTemperatureShow.innerHTML = `${Math.round(response.data.main.temp_min)}`;
 
-  let maxTemperature = Math.round(response.data.main.temp_max);
   let maxTemperatureShow = document.querySelector("#max_temp_today");
-  maxTemperatureShow.innerHTML = `${maxTemperature}`;
+  maxTemperatureShow.innerHTML = `${Math.round(response.data.main.temp_max)}`;
 
-  let humidity = response.data.main.humidity;
   let humidityShow = document.querySelector("#humidity");
-  humidityShow.innerHTML = `${humidity}`;
+  humidityShow.innerHTML = `${response.data.main.humidity}`;
 
-  let weatherDescription = response.data.weather[0].description;
   let weatherDescriptionShow = document.querySelector(".weather_description");
-  weatherDescriptionShow.innerHTML = `${weatherDescription}`;
+  weatherDescriptionShow.innerHTML = `${response.data.weather[0].description}`;
+
+  let iconShow = document.querySelector(".card-img-top");
+  iconShow.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconShow.setAttribute("alt", response.data.weather[0].description);
 }
 
 function currentLocation(position) {
