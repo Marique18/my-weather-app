@@ -14,22 +14,22 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saterday",
+  "Saturday",
 ];
 let day = days[now.getDay()];
 let months = [
-  "January",
-  "February",
+  "Jan",
+  "Feb",
   "March",
   "April",
   "May",
   "June",
   "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Aug",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 let month = months[now.getMonth()];
 
