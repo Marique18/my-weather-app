@@ -98,6 +98,9 @@ function showTemperatureInputLocation(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconShow.setAttribute("alt", response.data.weather[0].description);
+
+  let windspeedShow = document.querySelector("#windspeed");
+  windspeedShow.innerHTML = `${Math.round(response.data.wind.speed)}`;
 }
 
 function currentLocation(position) {

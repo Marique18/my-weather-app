@@ -49,7 +49,7 @@
               <h1 class="name-city">..</h1>
               <div class="current_temperature">
                 <p>
-                  <span id="current_temp"> .. </span
+                  <span id="current_temp"></span
                   ><a href id="tempCelsius" ="#" class="active">°C</a>|<a
                     href
                     id="tempFahrenheit"
@@ -61,14 +61,18 @@
               <p class="weather_description">..</p>
               <br />
               <br />
-              <p class="forcast-for-the-whole-day">
-                <a href id="min_temp_today" ="#">..</a>°C |
-                <a href id="max_temp_today" ="#">..</a>°C
-                <br />
-                Humidity <a href id="humidity" ="#">..</a>%
-                <br />
-                Windspeed <a href id="windspeed" ="#">..</a>km/h
-              </p>
+              <div id="forcast-for-the-whole-day">
+                <ul>
+                  <li>
+                    <span id="min_temp_today"></span>°C |<span
+                      id="max_temp_today"
+                    ></span
+                    >°C
+                  </li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Windspeed: <span id="windspeed"></span> km/h</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
